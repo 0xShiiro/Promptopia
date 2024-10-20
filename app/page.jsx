@@ -1,8 +1,11 @@
+import Feed from "@components/Feed";
 import "@styles/globals.css";
 import Image from "next/image";
 
+
 export default function Home() {
   return (
+    <>
     <section className='w-full flex-center flex-col'>
     <h1 className='head_text text-center'>
       Discover & Share
@@ -14,5 +17,8 @@ export default function Home() {
       discover, create and share creative prompts
     </p>
   </section>
+  <Feed/>
+    </>
+    
   );
 }
